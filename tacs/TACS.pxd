@@ -254,6 +254,7 @@ cdef extern from "TACSElement.h":
         int numNodes()
         int numVariables()
         void setComponentNum(int)
+        int getComponentNum()
         TACSConstitutive *getConstitutive()
 
 cdef extern from "TACSFunction.h":

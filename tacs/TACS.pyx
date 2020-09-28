@@ -120,6 +120,8 @@ cdef class Element:
         return
     def numNodes(self):
         return self.ptr.numNodes()
+    def getComponentNum(self):
+        return self.ptr.getComponentNum()
     def getConstitutive(self):
         return _init_Constitutive(self.ptr.getConstitutive())
 
